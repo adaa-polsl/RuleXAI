@@ -1,0 +1,10 @@
+Iris-setosa | conditions_names;Iris-setosa | importances;Iris-versicolor | conditions_names;Iris-versicolor | importances;Iris-virginica | conditions_names;Iris-virginica | importances
+petallength = (-inf, 2.45);1.0;petallength = <2.45, 4.75);0.8234509803921568;petallength = <4.75, inf);0.5136838148584906
+;;petallength = <2.45, 5.35);0.3740469221835075;petalwidth = <1.75, inf);0.496569693094629
+;;petallength = (-inf, 4.75);0.2981388613042039;petallength = <4.85, inf);0.43343030690537093
+;;sepalwidth = (-inf, 2.95);0.25828887286709923;petalwidth = <1.45, inf);0.32763693985849063
+;;sepalwidth = (-inf, 2.45);0.25589852008456654;;
+;;petalwidth = (-inf, 1.75);0.18359664404223222;;
+;;petalwidth = (-inf, 1.65);0.11654901960784321;;
+;;sepallength = <4.95, inf);0.0870106947586727;;
+;;sepallength = <4.7, inf);0.04013829787234042;;
