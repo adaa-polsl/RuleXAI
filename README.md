@@ -4,7 +4,7 @@ RuleXAI is a rule-based aproach to explain the output of any machine learning mo
 
 ## Instalation
 
-RuleXAI can be installed from PyPI
+RuleXAI can be installed from [PyPI](https://pypi.org/project/rulexai/)
 
 ```bash
 pip install rulexai
@@ -40,6 +40,8 @@ svm.fit(X_train, y_train)
 # use Explainer to explain model output
 explainer =  Explainer(X = X_train,model_predictions = y_train.astype(str), type = "classification")
 explainer.explain()
+
+print(explainer.condition_importances_)
 ```
 
 ## Sample notebooks
