@@ -46,17 +46,17 @@ print(explainer.condition_importances_)
 
 ## Sample notebooks
 
-* **[Classification]()**  - in this notebook, the data from https://www.kaggle.com/c/titanic is analysed to show the advantages and possibilities of using the RuleXAI library for in-depth analysis of the dataset for classification task. The use of RuleXAI to explain rule-based and tree-based models was also compared. 
+* **[Classification](https://rulexai.readthedocs.io/en/latest/rst/tutorials/classification.html)**  - in this notebook, the data from https://www.kaggle.com/c/titanic is analysed to show the advantages and possibilities of using the RuleXAI library for in-depth analysis of the dataset for classification task. The use of RuleXAI to explain rule-based and tree-based models was also compared. 
    
-* **[Regression]()** - notebook showing the use of RuleXAI to explain rule-based regression model
+* **[Regression](https://rulexai.readthedocs.io/en/latest/rst/tutorials/regression.html)** - notebook showing the use of RuleXAI to explain rule-based regression model
    
-* **[Survival]()** - notebook showing the use of RuleXAI to explain rule-based survival model
+* **[Survival](https://rulexai.readthedocs.io/en/latest/rst/tutorials/survival.html)** - notebook showing the use of RuleXAI to explain rule-based survival model
     
-* **[Black-box model]()** explainability - the purpose of this notebook is to demonstrate the possibility of using RuleXAI to explain any black box models.
+* **[Black-box model](https://rulexai.readthedocs.io/en/latest/rst/tutorials/black-box_model_aproximation.html)** explainability - the purpose of this notebook is to demonstrate the possibility of using RuleXAI to explain any black box models.
      
-* **[Transformation]()** - notebook showing the use of RuleXAI to transform a dataset. Often datasets contain missing values and nominal values. Most available algorithms do not support either missing values or nominal values. Many algorithms require the data to be rescaled beforehand. The RuleXAI library is able to convert a dataset with nominal and missing values into a binary dataset containing as attributes the conditions describing the dataset and as values “1” when the condition is satisfied for the example and “0” when the condition is not satisfied.
+* **[Transformation](https://rulexai.readthedocs.io/en/latest/rst/tutorials/dataset_transformation.html)** - notebook showing the use of RuleXAI to transform a dataset. Often datasets contain missing values and nominal values. Most available algorithms do not support either missing values or nominal values. Many algorithms require the data to be rescaled beforehand. The RuleXAI library is able to convert a dataset with nominal and missing values into a binary dataset containing as attributes the conditions describing the dataset and as values “1” when the condition is satisfied for the example and “0” when the condition is not satisfied.
    
 
 ## Documentation
-Full documentation is available [here]()
+Full documentation is available [here](https://rulexai.readthedocs.io/en/latest/index.html)
 
