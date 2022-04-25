@@ -30,15 +30,16 @@ data = load_iris()
 df = pd.DataFrame(data['data'], columns=data['feature_names'])
 df['class'] = data['target']
 
-
 # train a SVM classifier
 X_train,X_test,y_train,y_test = train_test_split(df.drop(columns=["class"]), df["class"], test_size=0.2, random_state=0)
 svm = SVC(kernel='rbf', probability=True)
 svm.fit(X_train, y_train)
-
+predictions = svm.predict(X_train)
+# prepare model predictions to be fed to RuleXAI, remember to change numerical predictions to labels (in this example it is simply converting predictions to a string)
+model_predictions = pd.DataFrame(predictions.astype(str), columns=[y_train.name], index = y_train.index)
 
 # use Explainer to explain model output
-explainer =  Explainer(X = X_train,model_predictions = y_train.astype(str), type = "classification")
+explainer =  Explainer(X = X_train,model_predictions = model_predictions, type = "classification")
 explainer.explain()
 
 print(explainer.condition_importances_)
