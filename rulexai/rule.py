@@ -1,7 +1,8 @@
 import enum
 import numpy as np
 from typing import List
-np.warnings.filterwarnings('ignore')
+import warnings
+warnings.filterwarnings('ignore')
 
 # creating enumerations using class
 class LogicalOperator(enum.Enum):

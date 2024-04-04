@@ -1,4 +1,4 @@
-from rulekit.operator import BaseOperator
+from rulekit._operator import BaseOperator
 import numpy as np
 from .rule import Rule, CompoundCondition, ElementaryCondition
 from rulekit import RuleKit
@@ -484,9 +484,9 @@ class SurvivalModel(Model):
 
             compoundCondition.add_subcondition(elementaryCondition)
 
-        consequence_att, consequence_value = consequence.split(" = ")
-        consequence_val = consequence_value[1:-1]
-        consequence = ElementaryCondition(consequence_att, consequence_val, column_index=self.column_indexes[attribute])
+        consequence_att = "survival_curve"
+        consequence_val = ""
+        consequence = ElementaryCondition(consequence_att, consequence_val, column_index=0)
 
         return Rule(compoundCondition, consequence)
 

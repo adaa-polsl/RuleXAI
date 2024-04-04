@@ -14,7 +14,6 @@ import os
 from pathlib import Path
 from rulexai.explainer import RuleExplainer
 
-
 class TestConditionsImportances(unittest.TestCase):
 
     @classmethod
@@ -103,6 +102,7 @@ class TestConditionsImportances(unittest.TestCase):
             induction_measure=Measures.C2,
             pruning_measure=Measures.C2,
             voting_measure=Measures.C2,
+            mean_based_regression = False
         )
         reg.fit(x, y)
 

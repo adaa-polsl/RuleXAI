@@ -10,7 +10,7 @@ with io.open(f"{current_path}/README.md", mode="r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="rulexai",
-    version="1.0.0",
+    version="1.1.0",
     author="Dawid Macha",
     author_email="dawid.m.macha@gmail.com",
     description="RuleXAI is a rule-based aproach to explain the output of any machine learning model. It is suitable for classification, regression and survival tasks.",
@@ -30,12 +30,13 @@ setuptools.setup(
         "Intended Audience :: Science/Research",
     ],
     include_package_data=True,
-    python_requires=">=3.6",
+    python_requires=">=3.9",
     install_requires=[
-        "pandas ~= 1.2.1",
-        "numpy ~= 1.20.3",
-        "matplotlib ~= 3.4.2",
-        "rulekit ~= 1.6.0",
+        "pandas >= 1.5.0, < 2.3.0",
+        "numpy ~= 1.26.4",
+        "matplotlib ~= 3.8.3",
+        "rulekit ~= 1.7.6",
+        "lifelines ~= 0.28.0"
     ],
     test_suite="tests",
 )

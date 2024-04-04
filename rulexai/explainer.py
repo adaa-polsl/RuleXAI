@@ -507,7 +507,7 @@ class RuleExplainer(BaseExplainer):
         if type == "regression":
             model = RegressionModel(model = model, feature_names= X.columns, label_name=label_name)
         elif type == "survival":
-            model = SurvivalModel(model=model, fetures_names = X.columns, survival_status_name=label_name)
+            model = SurvivalModel(model=model, feature_names = X.columns, survival_status_name=label_name)
         else:
                                         
             model = ClassificationModel(model = model, feature_names = X.columns, class_names = np.unique(y), label_name = label_name)
